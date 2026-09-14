@@ -5,12 +5,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichengAI/dsh-skills-manager.git"
+    "url": "git+https://github.com/LunFengChen/dsh-skills-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/MichengAI/dsh-skills-manager/issues"
+    "url": "https://github.com/LunFengChen/dsh-skills-manager/issues"
   },
-  "homepage": "https://github.com/MichengAI/dsh-skills-manager#readme",
+  "homepage": "https://github.com/LunFengChen/dsh-skills-manager",
   "type": "module",
   "packageManager": "pnpm@11.22.0",
   "main": "lib/index.js",
@@ -27,6 +27,12 @@
     "CHANGELOG.zh-CN.md"
   ],
   "dsh": {
+    "plugin": {
+      "title": "Skills manager",
+      "titleZh": "技能管理",
+      "description": "Load, toggle, create, and import local Agent skills.",
+      "descriptionZh": "加载、开关、创建并导入本机 Agent 技能。"
+    },
     "bundle": {
       "patch": "./cordis.patch.yml"
     },
