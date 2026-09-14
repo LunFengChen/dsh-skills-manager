@@ -24,6 +24,7 @@ jobs:
 
   publish:
     needs: check
+    if: ${{ !contains(github.ref, 'xfdsh') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
