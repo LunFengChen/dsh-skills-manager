@@ -310,7 +310,7 @@ const clientSource = await readFile(
   "utf8",
 );
 ok(
-  clientSource.includes('id: "@michengai/dsh-skills-manager"'),
+  clientSource.includes('id: "@x1a0f3n9/dsh-skills-manager"'),
   "client registers the scoped package module ID",
 );
 ok(
