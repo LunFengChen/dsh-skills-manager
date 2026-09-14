@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   publish:
+    if: ${{ !contains(github.ref, 'xfdsh') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
