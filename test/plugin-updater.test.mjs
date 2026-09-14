@@ -13,7 +13,7 @@ test('技能管理器独立更新只接受同源专用请求', () => {
   assert.equal(isTrustedUpdateRequest({ headers: { origin: 'http://localhost:3000', host: 'localhost:3000' } }), false)
   assert.equal(isTrustedUpdateRequest({ headers: { [PLUGIN_UPDATE_HEADER]: '1', host: 'localhost:3000' }, socket: { remoteAddress: '::1' } }), false)
   assert.equal(isTrustedUpdateRequest({ headers: { [PLUGIN_UPDATE_HEADER]: '1', origin: 'http://localhost:3000', host: 'localhost:3000' }, socket: { remoteAddress: '192.168.1.8' } }), false)
-  assert.equal(manualPluginUpdateCommand('web', '@michengai/dsh-skills-manager', '0.1.41'), 'dsh plugin --profile web add @michengai/dsh-skills-manager@0.1.41 --registry=https://registry.npmjs.org/')
+  assert.equal(manualPluginUpdateCommand('web', '@x1a0f3n9/dsh-skills-manager', '0.1.41'), 'dsh plugin --profile web add @x1a0f3n9/dsh-skills-manager@0.1.41 --registry=https://registry.npmjs.org/')
   assert.equal(isDshCliEntry('C:/tools/dsh/lib/bin.js', { name: '@deepseek-ai/dsh', bin: { dsh: 'lib/bin.js' } }, 'C:/tools/dsh'), true)
   assert.equal(isDshCliEntry('C:/tools/dsh/lib/bin.js', { name: '@deepseek-ai/dsh', bin: { dsh: 'lib/other.js' } }, 'C:/tools/dsh'), false)
   assert.equal(isDshCliEntry('C:/tools/dsh/lib/bin.js', { name: 'other-cli', bin: { dsh: 'lib/bin.js' } }, 'C:/tools/dsh'), false)

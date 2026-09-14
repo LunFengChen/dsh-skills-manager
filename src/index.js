@@ -318,7 +318,7 @@ function registerAgentSkillProviders(ctx, invalidators) {
 function apply(ctx) {
   ctx.effect(() => registerPluginUpdater(ctx, {
     endpoint: "/api/michengai/dsh-skills-manager/update",
-    packageName: "@michengai/dsh-skills-manager",
+    packageName: "@x1a0f3n9/dsh-skills-manager",
     manifestUrl: new URL("../package.json", import.meta.url),
   }), "skills-manager: plugin updater");
   const log = makeLog();
