@@ -1,6 +1,6 @@
 {
   "name": "@x1a0f3n9/dsh-skills-manager",
-  "version": "0.1.53",
+  "version": "0.1.53-xfdsh.1",
   "description": "DSH Skills Manager — 在 DeepSeek Harness 中统一加载并安全管理本机 Agent Skills · Load and safely manage local Agent Skills in DSH",
   "license": "Apache-2.0",
   "repository": {
@@ -29,9 +29,9 @@
   "dsh": {
     "plugin": {
       "title": "Skills manager",
-      "titleZh": "技能管理",
+      "titleZh": "\u6280\u80fd\u7ba1\u7406",
       "description": "Load, toggle, create, and import local Agent skills.",
-      "descriptionZh": "加载、开关、创建并导入本机 Agent 技能。"
+      "descriptionZh": "\u52a0\u8f7d\u3001\u5f00\u5173\u3001\u521b\u5efa\u5e76\u5bfc\u5165\u672c\u673a Agent \u6280\u80fd\u3002"
     },
     "bundle": {
       "patch": "./cordis.patch.yml"
