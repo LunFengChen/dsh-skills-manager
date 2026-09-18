@@ -11,9 +11,9 @@
   [简体中文](README.zh-CN.md) · [Changelog](CHANGELOG.md) · [Apache-2.0](LICENSE)
 
   [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
-  [![npm package](https://img.shields.io/npm/v/%40michengai%2Fdsh-skills-manager.svg?label=npm%20package)](https://www.npmjs.com/package/@x1a0f3n9/dsh-skills-manager)
-  [![npm downloads](https://img.shields.io/npm/dt/%40michengai%2Fdsh-skills-manager.svg?label=npm%20downloads)](https://www.npmjs.com/package/@x1a0f3n9/dsh-skills-manager)
-  [![DSH Web Plugin](https://img.shields.io/badge/DSH%20Web-Plugin-0f766e.svg)](https://github.com/MichengAI/dsh-skills-manager)
+  [![npm package](https://img.shields.io/npm/v/%40x1a0f3n9%2Fdsh-skills-manager/xfdsh.svg?label=npm%20package)](https://www.npmjs.com/package/@x1a0f3n9/dsh-skills-manager)
+  [![npm downloads](https://img.shields.io/npm/dt/%40x1a0f3n9%2Fdsh-skills-manager.svg?label=npm%20downloads)](https://www.npmjs.com/package/@x1a0f3n9/dsh-skills-manager)
+  [![DSH Web Plugin](https://img.shields.io/badge/DSH%20Web-Plugin-0f766e.svg)](https://github.com/LunFengChen/dsh-skills-manager)
   [![Node.js ^22.19.0 || >=24.0.0](https://img.shields.io/badge/Node.js-22.19%2B%20%7C%20%3E%3D24-339933.svg?logo=node.js&logoColor=white)](https://nodejs.org/)
 </div>
 
@@ -68,7 +68,7 @@ dsh --profile web --dump-config
 
 Restart DSH, refresh the page, and open **Settings → Skills**. To update, select **Check for updates** or run the installation command again.
 
-- Plugin `0.1.53` is tested with DeepSeek Harness `0.1.0-rc.8`, `0.1.1-rc.2`, `0.1.2-rc.1`, `0.1.5-rc.1`, `0.1.5-rc.2`, `0.1.6-alpha.1`, `0.1.6-alpha.2`.
+- Plugin `0.1.53-xfdsh.1` is tested with DeepSeek Harness `0.1.0-rc.8`, `0.1.1-rc.2`, `0.1.2-rc.1`, `0.1.5-rc.1`, `0.1.5-rc.2`, `0.1.6-alpha.1`, `0.1.6-alpha.2`, and xfdsh `0.1.5-rc.3`.
 
 ## Usage
 

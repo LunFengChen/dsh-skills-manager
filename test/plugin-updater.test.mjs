@@ -34,7 +34,7 @@ test('技能客户端与 Host 绑定自身更新入口', async () => {
   const client = await readFile(new URL('../src/client.js', import.meta.url), 'utf8')
   const updateUi = await readFile(new URL('../src/plugin-update-ui.js', import.meta.url), 'utf8')
   const host = await readFile(new URL('../src/index.js', import.meta.url), 'utf8')
-  assert.match(client, /packageName: "@michengai\/dsh-skills-manager"/)
+  assert.match(client, /packageName: "@x1a0f3n9\/dsh-skills-manager"/)
   assert.match(client, /titleRowSelector: "\.dssm-title-row"/)
   assert.match(client, /createIcon: createPluginUpdateIcon/)
   assert.match(client, /UPDATE_ICON_PATHS/)
