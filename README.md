@@ -68,7 +68,7 @@ dsh --profile web --dump-config
 
 Restart DSH, refresh the page, and open **Settings → Skills**. To update, select **Check for updates** or run the installation command again.
 
-- Plugin `0.1.53-xfdsh.1` is tested with DeepSeek Harness `0.1.0-rc.8`, `0.1.1-rc.2`, `0.1.2-rc.1`, `0.1.5-rc.1`, `0.1.5-rc.2`, `0.1.6-alpha.1`, `0.1.6-alpha.2`, and xfdsh `0.1.5-rc.3`.
+- Plugin `0.1.53-xfdsh.2` is tested with DeepSeek Harness `0.1.0-rc.8`, `0.1.1-rc.2`, `0.1.2-rc.1`, `0.1.5-rc.1`, `0.1.5-rc.2`, `0.1.6-alpha.1`, `0.1.6-alpha.2`, `0.1.7-rc.2`.
 
 ## Usage
 

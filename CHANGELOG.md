@@ -4,6 +4,10 @@
 
 The five most recent published versions are listed below.
 
+## 0.1.53-xfdsh.2 - 2026-10-03
+
+- Add support for DeepSeek Harness `0.1.7-rc.2` while retaining the previously supported versions.
+
 ## 0.1.53 - 2026-09-18
 
 - Fix the empty Project tab on official DeepSeek Harness `0.1.6-alpha.2`. Session lists no longer expose a current-session field; the tab now follows the session shown in the main view, while older hosts keep the previous current-session binding.
