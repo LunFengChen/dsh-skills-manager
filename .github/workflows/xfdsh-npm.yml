@@ -45,11 +45,11 @@ jobs:
       - name: Install
         run: |
           if [ -f pnpm-lock.yaml ]; then
-            pnpm install --frozen-lockfile --config.strict-peer-dependencies=false || pnpm install --config.strict-peer-dependencies=false
+            pnpm install --frozen-lockfile --ignore-scripts --config.strict-peer-dependencies=false || pnpm install --ignore-scripts --config.strict-peer-dependencies=false
           elif [ -f package-lock.json ]; then
-            npm ci || npm install
+            npm ci --ignore-scripts || npm install --ignore-scripts
           else
-            npm install
+            npm install --ignore-scripts
           fi
 
       - name: Build
