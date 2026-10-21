@@ -4,6 +4,10 @@
 
 The five most recent published versions are listed below.
 
+## 0.1.54 - 2026-10-21
+
+- Publish as `0.1.54` without an `-xfdsh` npm prerelease tail. Compatibility with DeepSeek Harness `0.1.7-rc.3` and `0.1.7-rc.4` is unchanged.
+
 ## 0.1.53-xfdsh.3 - 2026-10-21
 
 - Add support for DeepSeek Harness `0.1.7-rc.3` and `0.1.7-rc.4` while retaining the previously supported versions.
