@@ -2,6 +2,7 @@ name: xfdsh-npm
 
 # Publish the @x1a0f3n9 scoped package on xfdsh tags. Upstream release.yml
 # still owns unscoped / official names on default-branch v* tags.
+# Keep latest and xfdsh on this version so untagged and @xfdsh installs match.
 on:
   push:
     tags:
@@ -65,11 +66,13 @@ jobs:
           NAME='${{ steps.pkg.outputs.name }}'
           VER='${{ steps.pkg.outputs.version }}'
           if npm view "$NAME@$VER" version >/dev/null 2>&1; then
-            echo "$NAME@$VER already on npm, skipping"
-            exit 0
+            echo "$NAME@$VER already on npm, skipping publish"
+          else
+            TAG=latest
+            case "$VER" in
+              *-*) TAG=xfdsh ;;
+            esac
+            npm publish --access public --ignore-scripts --tag "$TAG"
           fi
-          TAG=latest
-          case "$VER" in
-            *-*) TAG=xfdsh ;;
-          esac
-          npm publish --access public --ignore-scripts --tag "$TAG"
+          npm dist-tag add "$NAME@$VER" latest
+          npm dist-tag add "$NAME@$VER" xfdsh
