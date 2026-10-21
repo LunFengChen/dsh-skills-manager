@@ -4,6 +4,10 @@
 
 The five most recent published versions are listed below.
 
+## 0.1.53-xfdsh.3 - 2026-10-21
+
+- Add support for DeepSeek Harness `0.1.7-rc.3` and `0.1.7-rc.4` while retaining the previously supported versions.
+
 ## 0.1.53-xfdsh.2 - 2026-10-03
 
 - Add support for DeepSeek Harness `0.1.7-rc.2` while retaining the previously supported versions.
